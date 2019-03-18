@@ -29,9 +29,13 @@ def func_3(matrix):
 
 def main():
     s=read.readtxt('sa')
-    print(func_1(s))
-    print(func_2(s))
-    print(func_3(s))
+
+    result = []
+    result.append(func_1(s))
+    result.append(func_2(s))
+    result.append(func_3(s))
+
+    read.writetxt(result)
 
 if __name__ == "__main__":
     main()

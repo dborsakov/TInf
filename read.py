@@ -9,4 +9,13 @@ def readtxt (name):
             if len(line) > 0:
                 l.append([float(n) for n in line.split()])
     res = np.array(l)
+    f.close()
     return(res)
+
+def writetxt (result):
+    """Записывает результат в файл"""
+    f = open("output.txt", "w")
+    for i in str(result):
+        f.write(i)
+    f.close()
+    return 0
