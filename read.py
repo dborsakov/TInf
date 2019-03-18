@@ -7,6 +7,6 @@ def readtxt (name):
         for line in f:
             line = line.strip()
             if len(line) > 0:
-                l.append([int(n) for n in line.split()])
+                l.append([float(n) for n in line.split()])
     res = np.array(l)
     return(res)
