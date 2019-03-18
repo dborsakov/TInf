@@ -14,8 +14,7 @@ def readtxt (name):
 
 def writetxt (result):
     """Записывает результат в файл"""
-    t = [' H(X) ', ' H(Y) ', ' H(XY) ', ' H(X|Y) ', ' H(Y|X) ', ' I(XY)\n '
-                                                                '']
+    t = [' H(X) ', ' H(Y) ', ' H(XY) ', ' H(X|Y) ', ' H(Y|X) ', ' I(XY)\n ']
     f = open("output.txt", "w")
     for i in t:
         f.write(i)

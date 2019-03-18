@@ -21,11 +21,6 @@ def func_2(matrix):
 
 def func_3(matrix):
     """H(XY)"""
-    # res = 0
-    # for i in matrix:
-    #     for j in i:
-    #         if j != 0:
-    #             res += j*m.log(j)
     res =  func_5(matrix)+func_2(matrix)
     return res
 
@@ -35,7 +30,6 @@ def func_4(matrix):
     res = 0
     for i in matrix:
         tmp.append(sum(i))
-
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
             if matrix[i,j] != 0:
@@ -58,13 +52,8 @@ def func_6(matrix):
     res = func_1(matrix) - func_4(matrix)
     return res
 
-
 def main():
     s=read.readtxt('sa')
-
-    # func_5(s)
-
-
     result = []
     result.append(func_1(s))
     result.append(func_2(s))
